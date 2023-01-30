@@ -9,12 +9,8 @@ describe('Test print 40', () => {
     print(40)
 
     expect(logSpy).toHaveBeenCalled()
-    expect(logSpy).toHaveBeenCalledWith(converter[4][0])
-    expect(logSpy).toHaveBeenCalledWith(converter[4][1])
-    expect(logSpy).toHaveBeenCalledWith(converter[4][2])
-
-    expect(logSpy).toHaveBeenCalledWith(converter[0][0])
-    expect(logSpy).toHaveBeenCalledWith(converter[0][1])
-    expect(logSpy).toHaveBeenCalledWith(converter[0][2])
+    expect(logSpy).toHaveBeenCalledWith(converter[4][0] + converter[0][0])
+    expect(logSpy).toHaveBeenCalledWith(converter[4][1] + converter[0][1])
+    expect(logSpy).toHaveBeenCalledWith(converter[4][2] + converter[0][2])
   })
 })

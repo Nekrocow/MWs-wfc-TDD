@@ -18,7 +18,6 @@ describe('Test print single digits', () => {
 
     print(1)
 
-    expect(logSpy).toHaveBeenCalled()
     converter[1].forEach(e => {
       expect(logSpy).toHaveBeenCalledWith(e)
     })
