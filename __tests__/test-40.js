@@ -1,4 +1,4 @@
-const print = require('../Activities/seven-display')
+const print = require('../Activities/SevenDisplay')
 const { converter } = require('../Activities/converterDictionary')
 
 const logSpy = jest.spyOn(global.console, 'log')
