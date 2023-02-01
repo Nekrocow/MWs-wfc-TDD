@@ -1,12 +1,12 @@
-const print = require('../Activities/SevenDisplay')
+const sevenDisplay = require('../Activities/SevenDisplay')
 const { converter } = require('../Activities/converterDictionary')
 
 const logSpy = jest.spyOn(global.console, 'log')
 
-describe('Test print single digits', () => {
-  test('Print 0', () => {
+describe('Test sevenDisplay for single digits', () => {
+  test('SevenDisplay with 0', () => {
 
-    print(0)
+    sevenDisplay(0)
 
     expect(logSpy).toHaveBeenCalled()
     converter[0].forEach(e => {
@@ -14,9 +14,9 @@ describe('Test print single digits', () => {
     })
   })
 
-  test('Print 1', () => {
+  test('SevenDisplay with 1', () => {
 
-    print(1)
+    sevenDisplay(1)
 
     converter[1].forEach(e => {
       expect(logSpy).toHaveBeenCalledWith(e)

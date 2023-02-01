@@ -1,8 +1,6 @@
 const { converter } = require('./converterDictionary')
 
-// La solución está MAL porque tengo que hacer el número línea por línea, no número por número; revisar
-
-function print(number) {
+function sevenDisplay(number) {
 	const digits = Array.from(number.toString(), Number)
 
 	let upperLine = ""
@@ -21,6 +19,4 @@ function print(number) {
 	return
 }
 
-module.exports = print
-
-print(12)
+module.exports = sevenDisplay
